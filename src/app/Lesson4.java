@@ -1,6 +1,6 @@
 package app;
 
-public class Main {
+public class Lesson4 {
     public static void main(String[] args) {
 
         double price1 = 205.99;
