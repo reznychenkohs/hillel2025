@@ -15,7 +15,7 @@ static int[] array = new int[15];
     public static void createArray(){
         Random random = new Random();
         for (int i = 0; i < array.length; i++) {
-            array[i] = random.nextInt(1, 100);
+            array[i] = random.nextInt(100) +1;
         }
         System.out.println("Початковий вигляд масиву:" + Arrays.toString(array));
     }
