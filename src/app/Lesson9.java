@@ -54,19 +54,30 @@ public class Lesson9 {
             for (int i = 0; i < array.length; i++) {
                 if (j % 2 == 0) {
                     evenMultiplication *= array[i][j];
-                }
-               else {
+                } else {
                     oddMultiplication *= array[i][j];
 
                 }
             }
         }
-
         System.out.println("Добуток елементів у парних стовпцях (стовпець 0, 2): " + evenMultiplication);
-        System.out.println("Добуток елементів у непарних стовпцях (стовпець 1, 3): " + oddMultiplication);  }
+        System.out.println("Добуток елементів у непарних стовпцях (стовпець 1, 3): " + oddMultiplication);
+    }
 
+
+    public static boolean magicMatrix(int[][] array) {
+        if (array == null || array.length == 0) {
+            return false;
+        }
+
+        int targetSum = 0;
+
+        for (int j = 0; j < array.length; j++) {
+            targetSum += array[0][j];
+        }
+        return true;
+    }
 }
-
 
 
 
